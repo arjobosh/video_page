@@ -1,0 +1,68 @@
+body {
+    background-color: lightgray;
+    margin: 25px 100px;
+}
+
+.navbar {
+    display: flex;
+    background-color: green;
+    height: 70px;
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#search {
+    height: 50%;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 30%;
+    background-color: none;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+.left {
+    height: 100%;
+    width: 65%;
+    float: left;
+}
+
+.video-player {
+    /*display: flex;*/
+    float: left;
+    background-color: greenyellow;
+    height: 480px;
+    /*width: 640px;*/
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.video-info {
+    background-color: yellow;
+    height: 100px;
+    /*width: 640px;*/
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.description {
+    background-color: orange;
+    height: 200px;
+    /*width: 640px;*/
+    width: 100%;
+    float: left;
+}
