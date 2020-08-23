@@ -10,21 +10,54 @@
     <body>
         <div class="navbar">
             <nav>
-                <div id="logo">logo here</div>
-                <input type="text" id="search" name="search">
-                <div id="profile">profile here</div>
+                <img id="user-profile" class="profile" src="profile_icon.png">
+                <input type="text" id="search" name="search" placeholder="Search">
+                <img id="user-profile" class="profile" src="profile_icon.png">
             </nav>
         </div>
 
-
         <div class="right">
             <aside class="sidebar">
-                <div class="video-card"><img src="azumi.png" alt="Azumi, Maniac (2018)" class="thumbnail">video</div>
-                <div class="video-card"><img src="darlene.jpg" alt="Azumi, Maniac (2018)" class="thumbnail">video</div>
-                <div class="video-card"><img src="peggy.png" alt="Azumi, Maniac (2018)" class="thumbnail">video</div>
-                <div class="video-card"><img src="ciri.jpg" alt="Azumi, Maniac (2018)" class="thumbnail">video</div>
-                <div class="video-card"><img src="nxworries.png" alt="Azumi, Maniac (2018)" class="thumbnail">video</div>
-                <div class="video-card"><img src="frank.png" alt="Azumi, Maniac (2018)" class="thumbnail">video</div>
+                <div class="video-card">
+                    <img src="azumi.png" alt="Azumi, Maniac (2018)" class="thumbnail">
+                    <div class="container-thumbnail-info">
+                        <span class="video-title">Neberdine Pharmaceutical <br>Biotech Demo</span>
+                        <span>Dr. Azumi Fujita</span>
+                        <span>May 20, 2018 • 201K views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <img src="darlene.jpg" alt="Darlene, Mr. Robot (2017)" class="thumbnail">
+                    <div class="container-thumbnail-info">
+                        <span class="video-title">hello, friend</span>
+                        <span>fs0ciety</span>
+                        <span>May 9, 2015 • 35M views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <img src="peggy.png" alt="JPEGMAFIA, Veteran (2018)" class="thumbnail">
+                    <div class="container-thumbnail-info">
+                        <span class="video-title">Veteran</span>
+                        <span>PEGGY</span>
+                        <span>Jan 21, 2017 • 1.6M views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <img src="ciri.jpg" alt="Ciri Noir" class="thumbnail">
+                    <div class="container-thumbnail-info">
+                        <span class="video-title">Ghouls vs. Alghouls</span>
+                        <span>Cirilla Fiona Elen Riannon</span>
+                        <span>Jan 1, 2077 • 0 views</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <img src="nxworries.png" alt="NxWorries (2018)" class="thumbnail">
+                    <div class="container-thumbnail-info">
+                        <span class="video-title">Best One</span>
+                        <span>NxWorries</span>
+                        <span>Apr 11, 2017 • 2M views</span>
+                    </div>
+                </div>
                 
             </aside>
         </div>
@@ -34,23 +67,39 @@
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FvZ8aboeadE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div class="video-info">
-                title<br>
-                date uploaded<br>
-                views<br>
-                favorite button<br>
-                report button
+            <div class="container-info-icons">
+                <div class="info">
+                    <div class="title">Liv.e - I Been Livin (Official Lyric Video)</div>
+                    <div class="date-views">Jul 7, 2020 • 6,814 views</div>
+                </div>
+
+                <div class="icons">
+                    <!--<img id="favorite" src="favorite_icon.png">
+                    <img id="share" src="share_icon.png">
+                    <img id="flag" src="flag_icon.png">-->
+                </div>
             </div>
 
-            <div class="description">
-                uploader name<br>
-                subscribe button<br>
-                description
+            <div class="container-author-subs">
+                <div class="author-info">
+                    <img id="author-profile" class="profile" src="profile_icon.png">
+                    <span>Liv.e<br>2.62k subscribers</span>
+                </div>
+                <button type="button" id="sub-button">SUBSCRIBE</button>
             </div>
 
-            <form class="comments">
+            <div class="container-desc">
+                <div class="description">
+                    The official lyric video for Liv.e's "I Been Livin," the last single release from her forthcoming debut album "Couldn't Wait To tell You..." out July 31st
+                </div>
 
-            </form>
+                <div class="more">
+                    more
+                </div>
+            </div>
+
         </div>
     </body>
+
+    <script src="video_page_script.js"></script>
 </html>
