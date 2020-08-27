@@ -1,17 +1,15 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #fafafa;
     margin: 0;
     font-family: Helvetica;
 }
 
-/* navigation bar */
+/******* navigation bar *******/
 .navbar {
     background-color: white;
-    border-bottom: 1px solid black;
     height: 9vh;
     width: 100%;
     margin-bottom: 5vh;
-    text-align: center;
 }
 
 nav {
@@ -19,21 +17,50 @@ nav {
     width: inherit;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 6vh;
+    width: 18vh;
+    background-color: #db0000;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
 }
 
 #search {
-    height: 40%;
-    width: 40%;
-    font-size: 1rem;
+    height: 4vh;
+    width: 30vw;
+    font-size: 0.9rem;
     padding: 2px 10px;
 }
 
-.main {
-    margin: 0 6vh;
+#search-button {
+    height: 5vh;
+    width: 5vw;
+    border: 1px solid black;
+    padding-top: 2px;
 }
 
-/* main right container */
+#user-nav-icon {
+    height: 40px;
+    width: 40px;
+}
+
+#search-icon {
+    height: 19px;
+    width: 19px;
+}
+/******************************/
+
+.main {
+    margin: 0 5vh;
+}
+
+/**** main right container ****/
 .right {
     float: right;
     width: 33%;
@@ -55,7 +82,8 @@ nav {
 .container-thumbnail-info > * {
     display: block;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 0.9rem;
+    color: #303030;
 
 }
 
@@ -63,10 +91,10 @@ nav {
     max-height: 100%;
     max-width: 40%;
 }
+/*******************************/
 
 
-
-/* main left container */
+/***** main left container *****/
 .left {
     height: 100%;
     width: 60%;
@@ -84,7 +112,7 @@ nav {
 
 .container-info-icons {
     background-color: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cccccc;
     margin-bottom: 10px;
     height: 60px;
     width: 100%;
@@ -97,11 +125,29 @@ nav {
 .info > * {
     margin: 0;
     margin-bottom: 5px;
+    
 }
 
-.title {
-    font-weight: 700;
-    font-size: larger;    
+.video-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.video-thumb-up {
+    height: 30px;
+    width: 30px;
+}
+
+.video-thumb-down {
+    height: 30px;
+    width: 30px;
+    transform: rotate(180deg);
+}
+
+.main-video-title {
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 10px;
 }
 
 .icons > * {
@@ -122,13 +168,23 @@ nav {
     justify-content: space-between;
 }
 
+#sub-button {
+    background-color: #db0000;
+    border: 0;
+    width: 8vw;
+    height: 6vh;
+    font-size: .9rem;
+    font-weight: 600;
+    color: black;
+}
+
 .author-info {
     display: flex;
     align-items: center;
 }
 
 .container-desc {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 15px;
     margin-bottom: 30px;
 }
@@ -154,6 +210,7 @@ nav {
 }
 
 .video-title {
+    color: black;
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -174,6 +231,11 @@ nav {
     margin: 6vh 0;
 }
 
+#num-comments {
+    font-weight: 600;
+    margin-right: 50px;
+}
+
 .user-comment-form {
     display: flex;
     flex-wrap: nowrap;
@@ -181,9 +243,13 @@ nav {
 }
 
 #user-comment-box {
-    height: 4vh;
+    height: 5vh;
     width: 100%;
     padding: 0 5px;
+    border-width: 0 0 1px 0;
+    border-color: #cccccc;
+    background-color: #fafafa;
+    font-size: 0.9rem;
 }
 
 .comment-text {
@@ -192,7 +258,8 @@ nav {
 
 .comment-username {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.96rem;
     margin-bottom: 4px;
 }
 
@@ -201,15 +268,23 @@ nav {
     align-items: center;
 }
 
-.thumb-up {
+.comment-thumb-up, .comment-thumb-down {
     height: 20px;
     width: 20px;
     margin-right: 20px;
 }
 
-.thumb-down {
-    height: 20px;
-    width: 20px;
-    margin-right: 20px;
+.comment-thumb-down {
     transform: rotate(180deg);
 }
+
+
+.button, .like-stats, .comment-timestamp, .more {
+    color: #636363;
+    background-color: transparent;
+    border: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+/*******************************/
